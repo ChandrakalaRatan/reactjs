@@ -9,9 +9,14 @@ import { About } from "./components/About";
 import { Products } from "./components/Products";
 import { Login } from "./components/Login";
 import { Contact } from "./components/Contact";
+
+import { LoggedIn } from "./components/LoggedIn";
+
+
 class App extends React.Component {
     render(){
         return (
+            
             <Router history={browserHistory} >
             <div>
             <Root>
@@ -20,22 +25,11 @@ class App extends React.Component {
                 <Route path={"/products"} component={Products}/>
                 <Route path={"/login"} component={Login}/>
                 <Route path={"/contact"} component={Contact}/>
-                
+                <Route path={"/loggedin"} component={LoggedIn}/>
             </Root>
             </div>
             </Router>
-            // <div className="container">
-            //     <div className="row">
-            //     <div className="col-xs-10 col-xs-offset-1">
-            //         <Header/>
-            //     </div>
-            //     </div>
-            //     <div className="row">
-            //     <div className="col-xs-10 col-xs-offset-1">
-            //         <Login/>
-            //     </div>
-            //     </div>
-            // </div>
+            
         );
     }
 }

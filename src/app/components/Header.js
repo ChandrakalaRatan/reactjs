@@ -26,7 +26,7 @@ export const Header = (props) => {
                     </a>
                     <a class="mdl-navigation__link">
                     <Link to={"/contact"}> Contact Us </Link> 
-                    </a>
+                    </a>  
                 </nav>
                 </div>
             <main class="mdl-layout__content">

@@ -17,6 +17,15 @@ light green: #A3C4BC
   background-color: #258ea6;
 }
 
+/* Add item button fixed in bottom-left of the screen. */
+.zooma-delete-button {
+  color: rgba(255, 255, 255, 0.97);
+}
+
+.zooma-cancel-button {
+  margin-left: 15px;
+}
+
 .form-wrapper {
   width: 400px;
   display: flex;

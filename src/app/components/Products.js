@@ -37,17 +37,34 @@ export class Products extends React.Component{
         }
         else{
             return (
-                <div className="container">
-                    <ul>
+
+                <div className="wrapper">
+                <div className="form-wrapper">
+                    <div className="row small-up-2 medium-up-3 large-up-4">
+                    <div className="column bodyPart">
+                        <div className="row">
+                        <div className="col-xs-10 col-xs-offset-1">
+                            <h3>Welcome to Product Page</h3>
+                        </div>
+                        </div>
+                        <div className="row">
+                       <div className="col-xs-10 col-xs-offset-1"></div>
+                       <ul>
                         {items.map(item => (
                         <li key={item.id}>
-            Name: {item.name} | Email: {item.email} 
-            {/* Catergory: {item.name} | Description: {item.description} */}
+                         Name: {item.name} | Email: {item.email} 
+                         {/* Catergory: {item.name} | Description: {item.description} */}
                         </li>
                         ))}
 
                     </ul>
-                </div>
+
+                       </div>
+                      </div>
+               </div>
+              </div>
+              </div>
+               
             );
         }
     }
